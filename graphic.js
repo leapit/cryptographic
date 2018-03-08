@@ -239,7 +239,7 @@
     {
         let catArc = d3.arc()
             .innerRadius(0)
-            .outerRadius(maxRing + 2*maxBubble)
+            .outerRadius(maxRing + 2*maxBubble)// 默认2*maxBubble，圆被切去一部分
             .startAngle(rightAngle - cat.startAngle)
             .endAngle(rightAngle - cat.endAngle);
 
